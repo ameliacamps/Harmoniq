@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harmoniq</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"> 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+
+<style>
+/*menu*/
+   .menu-container {
+      background-color: #EA047E;
+      font-family: "Playfair Display", serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    .menu-container svg{
+      color: #00F5FF;
+      margin-left: 10px;
+    }
+
+    .fs-4{
+      color: #FCE700;
+      margin-left: 5px;
+    }
+
+    .nav-link{
+      color: white;
+    }
+
+   .nav-pills {
+    --bs-nav-pills-border-radius: var(--bs-border-radius);
+    --bs-nav-pills-link-active-color: white;
+    --bs-nav-pills-link-active-bg: #FF6D28;
+    font-family: "Lato", sans-serif;
+   }
+
+   .nav-link:hover {
+    color: #FCE700;
+   }
+
+  @media(max-width: 768px){
+   .menu-container{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+
+    .menu-container svg{
+    color: #00F5FF;
+    margin-left: 37%;
+     }  
+    }
+
+/*title*/
+  .gradient-background {
+    background: linear-gradient(300deg, #FCE700,  #FF6D28);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    }
+
+  #title h1{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: white !important;
+  }
+
+  #title p{
+    font-family: "Lato", sans-serif !important;
+    font-weight: 400;
+    color: black;
+  }
+
+  #title button{
+    background-color: #EA047E;
+    border: 0;
+    color: white;
+  }
+
+/*features*/
+  #features h2{
+    text-align: right;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    color: black;
+  }
+
+  #features .card{
+    background-color: #EA047E;
+    border: 0;
+    font-family: "lato", sans-serif;
+    color: white;
+  }
+
+  #features h3{
+    font-weight: 600;
+    color: #FCE700;
+  }
+
+  #features{
+    background-color: #FCE700;
+  }
+
+/*testimonals*/
+  #testimonial h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    color: black;
+    background-color: #00F5FF;
+  }
+
+  #testimonial .container-fluid{
+    background-color: #00F5FF;
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+  }
+
+   #testimonial .row{
+    margin-left: 5vw;
+    margin-right: 5vw;
+   }
+
+   #testimonial em{
+    font-size: 20px;
+   }
+
+   #black, #black-one{
+    background-color: black;
+    font-family: "lato", sans-serif;
+    color: white;
+    text-align: center;
+    border: 20px;
+    border-style: solid;
+    border-color: black;
+  }
+
+  #white-one, #white-two, #white-three, #white-four{
+    background-color: white;
+    color: white;
+    min-height: 10vh;
+  }
+
+   @media(max-width: 768px){
+    #black, #black-one{
+    font-size: 14px;
+    border-top: 20px;
+    padding-top: 20px;
+    text-align: left;
+    }
+
+    #testimonial h4{
+      font-size: 21px;
+    }
+
+     #testimonial em{
+    font-size: 17px;
+   }
+
+    }
+
+/*pricing*/
+  #pricing > main{
+    background-color: #EA047E;
+    padding: 20px;
+    font-family: "lato", sans-serif;
+  }
+
+  main > h2,h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    color: #FCE700;
+    text-align: center;
+  }
+
+  main > h3{
+    font-family: "lato", sans-serif;
+    color: white;
+  }
+
+  #pricing .card-header{
+    background-color: #FCE700;
+    color: black
+  }
+
+  #pricing .card{
+    border: none;
+  }
+
+  #pro-header{
+    background-color: #FF6D28 !important;
+    color: white !important;
+  }
+
+  #solo-button{
+    border-color: #FF6D28;
+    color: #FF6D28;
+  }
+
+  #solo-button:hover{
+    background-color: #FF6D28;
+    color: white;
+  }
+
+  #player-button, #pro-button{
+    background-color: #FF6D28;
+    border-color: #FF6D28;
+  }
+
+  #player-button:hover, #pro-button:hover{
+    background-color: #ea6224;
+    border-color: #ea6224;
+  }
+
+/*footer*/
+  #footer{
+   background-color: #ea6224;
+   padding: 2vh;
+  }
+
+  #footer svg{
+    color: #00F5FF
+  }
+
+  #footer p, .nav-link{
+    font-family: "lato", sans-serif !important;
+    font-weight: 500 !important;
+    color: white !important;
+  }
+
+</style>
+
+</head>
+
+<body>
+  <!-- Menu -->
+   <div class="menu-container"> 
+    <header class="d-md-flex flex-wrap justify-content-center py-3 border-bottom"> 
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"> 
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-music-note" viewBox="0 0 16 16">
+          <path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"/>
+          <path fill-rule="evenodd" d="M9 3v10H8V3z"/>
+          <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"/>
+        </svg>
+        <span class="fs-4">Harmoniq</span> 
+      </a> 
+      <ul class="nav nav-pills"> 
+        <li class="nav-item" >
+          <a href="#" class="nav-link active" aria-current="page">Home</a>
+        </li> 
+        <li class="nav-item">
+          <a href="#" class="nav-link">About</a>
+        </li> <li class="nav-item">
+          <a href="#" class="nav-link">Instruments</a>
+        </li> <li class="nav-item">
+          <a href="#" class="nav-link">Help Center</a>
+        </li> <li class="nav-item">
+          <a href="#" class="nav-link">Blog</a>
+        </li> 
+      </ul> 
+    </header> 
+  </div>
+
+  <!-- Title -->
+  <section id="title">
+    <div class="gradient-background">
+    <div class="container col-xxl-8 px-4 py-5"> 
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5"> 
+        <div class="col-10 col-sm-8 col-lg-6"> 
+          <img src="./1.jpg" class="d-block mx-lg-auto img-fluid rounded-4" alt="woman learning ukelele on the computer" width="700" height="500" loading="lazy"> 
+        </div> 
+        <div class="col-lg-6"> 
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Unlock Your Sound with Harmoniq</h1> 
+          <p class="lead">Welcome to Harmoniq, the next-gen platform where music learning, creativity, and collaboration come together. Whether you're just starting out or leveling up your skills, Harmoniq gives you everything you need to grow, create, and connect through music.</p> 
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start"> 
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Start For Free</button> 
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">See How It Works</button> 
+          </div> 
+        </div> 
+      </div> 
+    </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features">
+    <div class="container px-4 py-5" id="custom-cards">
+      <h2 class="pb-2 border-bottom">Why Harmoniq?</h2>
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
+            <div class="card">
+            <img src="./band.jpg" class="card-img-top" alt="man playing guitar singing into the microphone">
+              <div class="card-body">
+                <h3 class="card-title">Connect and Collaborate</h3>
+                <p class="card-text">Join a global community of artists, learners, and producers. Jam together, share your tracks, or remix someone else’s beat: all from one app.</p>
+              </div>
+            </div>
+          </div> 
+        </div>
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
+            <div class="card">
+            <img src="./studio.jpg" class="card-img-top" alt="recording studio equipment">
+              <div class="card-body">
+                <h3 class="card-title">Create Your Way</h3>
+                <p class="card-text">Loop, layer, remix, or record. Our intuitive tools help you make the music you hear in your head, no matter your experience level.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
+            <div class="card">
+            <img src="./sheetmusic.jpg" class="card-img-top" alt="sheet music">
+              <div class="card-body">
+                <h3 class="card-title">Learn with Confidence</h3>
+                <p class="card-text">Step-by-step lessons designed by real musicians. From chords to composition, build your skills at your own pace; and actually enjoy it.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial -->
+  <section id="testimonial">
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-12 mt-4">
+          <h2>Testimonials</h2>
+        </div>
+
+        <div class="col-1 rounded-start-2" id="white-one">
+        </div>
+
+
+        <div class="col-4" id="black-one">
+          <p>“Harmoniq helped me finally understand music theory, and then turned me into a beatmaker. It’s both a classroom and a studio.”</p>
+          <h4>Cameron</br><em>Berlin, Germany</em></h4>
+        </div>
+
+        <div class="col-2 " id="white-two">
+        </div>
+
+        <div class="col-4 2" id="black">
+          <p>“I used to get stuck in tutorials. Now I actually finish songs and get feedback from people around the world.”</p>
+          <h4>Tasha</br><em>Austin, USA</em></h4>
+        </div>
+
+        <div class="col-1 rounded-end-2" id="white-three">
+        </div>
+
+        <div class="col-12 rounded-bottom-2 mb-4" id="white-four">
+          <p>hi</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing">
+    <main>
+      <h2 class="col-12 mt-4">A Plan for Every Music Journey</h2>
+      <h3>No pressure. Just practice, play, and grow at your own pace.</h3>
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Solo</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>3 Lessons Per Week</li>
+                <li>Practice Mode</li>
+                <li>Basic Instruments Only</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-outline-primary" id="solo-button">Sign up for free</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Session Player</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$14<small class="text-body-secondary fw-light">/mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Unlimited Lessons</li>
+                <li>All Instruments & Styles</li>
+                <li>Jam & Collaboration Tools</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary" id="player-button">Get started</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-primary">
+            <div class="card-header py-3 text-bg-primary" id="pro-header">
+              <h4 class="my-0 fw-normal">Studio Pro</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Everything in Session Player</li>
+                <li>Live Feedback from Instructors</li>
+                <li>Priority Access to New Features</li>
+                <li>Export/Record & Share Tools</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary" id="pro-button">Start Playing Today</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- Footer -->
+  <section id="footer">
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-body-secondary">© 2025 Harmoniq, Inc.</p>
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none" aria-label="Bootstrap">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-music-note" viewBox="0 0 16 16">
+            <path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"/>
+            <path fill-rule="evenodd" d="M9 3v10H8V3z"/>
+            <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"/>
+          </svg>
+        </a>
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Instruments</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Help Center</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Blog</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+
+</html>
